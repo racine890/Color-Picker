@@ -1,0 +1,16 @@
+# Copy Rgb
+evaluate self.clipboard_clear()
+evaluate self.clipboard_append( str({*rgb}) )
+evaluate self.update()
+
+MessageBox Done Color Copied!
+end
+
+[
+description
+	- Copy the text to the clipboard
+	- Alert
+
+vars:
+	- *rgb: The rgb color, as a tuple
+]

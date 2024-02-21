@@ -1,0 +1,16 @@
+# Ask
+evaluate Canvas(self.page.sheet, width="50", height="30", bg="black") =>*colorCanvas
+evaluate {*colorCanvas}.place(x=150,y=10)
+
+ConfigButton 2 bg="#90240F", fg="white"
+ConfigButton 5 bg="#AA420A", fg="white"
+ConfigButton 6 bg="#A820A8", fg="white"
+
+[
+description
+	- Creates a canvas
+	- Add style to the buttons
+
+vars:
+	- *colorCanvas: The preview area.
+]

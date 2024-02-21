@@ -1,0 +1,16 @@
+# Copy Hex
+evaluate self.clipboard_clear()
+evaluate self.clipboard_append( {*hex} )
+evaluate self.update()
+
+MessageBox Done Color Copied!
+end
+
+[
+description
+	- Copy the text to the clipboard
+	- Alert
+
+vars:
+	- *hex: The hex color
+]
