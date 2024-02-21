@@ -1,0 +1,30 @@
+# Ask
+AskColor
+SetVar *color LASTRESULT
+
+GetTableElement 0 of *color
+evaluate ( int({LASTRESULT}[0]), int({LASTRESULT}[1]), int({LASTRESULT}[2]) )
+SetVar *rgb LASTRESULT
+CreateText 3 LASTRESULT
+
+GetTableElement 1 of *color
+SetVar *hex LASTRESULT
+CreateText 4 LASTRESULT
+
+evaluate {*colorCanvas}.configure(bg={*hex})
+
+end
+
+[
+description
+	- Ask a choice of color
+	- The first element is the rgb color. Format it as a tuple and display.
+	- The second element is the hex color. Just display it.
+	- update the color preview to the selected color.
+
+vars:
+	- *color: The selected color, as a collection
+	- *rgb: The rgb color, as a tuple
+	- *hex: The hex color
+	- *colorCanvas: The preview area.
+]

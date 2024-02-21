@@ -1,0 +1,13 @@
+# Init
+SetVar *rgb (255, 255, 255)
+SetVar *hex evaluate('#FFFFFF')
+end
+
+[
+description
+	- Set default color to white
+
+vars:
+	- *rgb: The rgb color, as a tuple
+	- *hex: The hex color
+]
