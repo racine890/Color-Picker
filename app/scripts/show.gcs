@@ -1,5 +1,5 @@
 # Ask
-evaluate Canvas(self.page.sheet, width="50", height="30", bg="black") =>*colorCanvas
+evaluate Canvas(self.page.sheet, width="50", height="30", bg="white", highlightthickness=1, highlightbackground="black") =>*colorCanvas
 evaluate {*colorCanvas}.place(x=150,y=10)
 
 ConfigButton 2 bg="#90240F", fg="white"
